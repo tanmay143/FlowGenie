@@ -8,7 +8,7 @@ import { ChevronRight, Home, Layers, MessageSquare, Mic2, PenTool, Send, Setting
 import dynamic from "next/dynamic";
 import { parseMermaidToExcalidraw } from "@excalidraw/mermaid-to-excalidraw";
 import { convertToExcalidrawElements } from "@excalidraw/excalidraw";
-import {chatgpt_api} from '@/components/server/get_points';
+import {chatgpt_api} from '@/components/server/chatgpt_api';
 const Excalidraw = dynamic(
   async () => (await import("@excalidraw/excalidraw")).Excalidraw,
   {
