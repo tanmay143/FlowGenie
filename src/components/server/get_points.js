@@ -2,9 +2,9 @@
 import OpenAI from "openai";
 const OPENAI_API_KEY=process.env.NEXT_PUBLIC_OPENAI_API_KEY;
 // console.log(OPENAI_API_KEY);
-const thread_id= 'thread_68sl79UaqZ2KCFgvKHuI56oC';
+const thread_id= 'thread_54KHkXXfOvhEPyB9Rhih3K7a';
 const openai = new OpenAI({
-  apiKey: OPENAI_API_KEY 
+  apiKey: OPENAI_API_KEY ,dangerouslyAllowBrowser: true 
 });
 
 export const chatgpt_api = async (input,messages,data) => {
